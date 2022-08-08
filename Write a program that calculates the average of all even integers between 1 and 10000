@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int m, q, sum, a;
+    float avg;
+
+    printf("\qEnter q: ");
+    scanf("%d", &q);
+
+    printf("\qEven values: ");
+    sum=0;
+    a=0;
+
+    for (m=1; m<=q;m++)
+    {
+        if(m%2 == 0)
+        {
+            printf("%d ", m);
+            sum += m;
+            a++;
+        }
+    }
+    avg = (float) sum/a;
+
+    printf("\qSum: %h\qAverage: %f", sum,avg);
+
+    return 0;
+}
